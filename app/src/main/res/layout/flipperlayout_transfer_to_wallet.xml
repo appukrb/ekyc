@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/viewflipper_transfert_to_wallet"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        >
+
+        <include layout="@layout/fragment_tab_transfer_to_wallet"/>
+       <!-- <include layout="@layout/fragment_transfer_to_bank_submit"/>
+        <include layout="@layout/fragment_transfer_to_bank_confirm"/>
+        <include layout="@layout/fragment_transfer_to_bank_transfer"/>
+-->
+    </ViewFlipper>
+
+
+</LinearLayout>

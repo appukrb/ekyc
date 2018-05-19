@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/white"
+    tools:context="com.tcs.mmpl.customer.Activity.Shopping">
+
+    <LinearLayout
+        android:id="@+id/linHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <include layout="@layout/listheader" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="Coming Soon !! Please contact us on 1-800-419-4196"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/linHeader"
+        android:autoLink="phone"/>
+
+</RelativeLayout>

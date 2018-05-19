@@ -1,0 +1,248 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/mainlinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutFooter"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/listheader" />
+
+        <ScrollView
+            android:id="@+id/scrollViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+                    <!-- android:background="#e7e3e1"-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_size"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/edtLoadAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:cursorVisible="false"
+                            android:hint="Amount"
+                            android:inputType="number"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <EditText
+                            android:id="@+id/edtPromocode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_size"
+                            android:background="@drawable/edittext"
+                            android:cursorVisible="false"
+                            android:hint="Enter Promo Code"
+                            android:inputType="textPersonName"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:visibility="gone"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_size"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/textview_rounded_corner"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:onClick="add50"
+                                    android:padding="@dimen/btn_padding_size"
+                                    android:text="+50 "
+                                    android:textSize="@dimen/normal_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/textview_rounded_corner"
+                                    android:clickable="true"
+                                    android:gravity="center"
+
+                                    android:onClick="add100"
+                                    android:padding="@dimen/btn_padding_size"
+                                    android:text="+100"
+                                    android:textSize="@dimen/normal_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/textview_rounded_corner"
+                                    android:clickable="true"
+                                    android:gravity="center"
+
+                                    android:onClick="add200"
+                                    android:padding="@dimen/btn_padding_size"
+                                    android:text="+200"
+                                    android:textSize="@dimen/normal_text_size"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_top_size"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/textview_rounded_corner"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:onClick="add500"
+                                    android:padding="@dimen/btn_padding_size"
+                                    android:text="+500"
+
+                                    android:textSize="@dimen/normal_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/textview_rounded_corner"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:onClick="add1000"
+                                    android:padding="@dimen/btn_padding_size"
+                                    android:text="+1000"
+
+                                    android:textSize="@dimen/normal_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/textview_rounded_corner"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:onClick="add5000"
+                                    android:padding="@dimen/btn_padding_size"
+                                    android:text="+5000"
+
+                                    android:textSize="@dimen/normal_text_size"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <Button
+                            android:id="@+id/btnLoadMoney"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/btn_margin_top"
+                            android:background="@drawable/rounded_corner"
+                            android:padding="@dimen/btn_padding_size"
+                            android:text="@string/button_proceed"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/normal_text_size" />
+
+
+                        <Button
+                            android:id="@+id/button8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/button7"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignRight="@+id/button7"
+                            android:layout_marginTop="@dimen/btn_margin_top"
+                            android:background="@drawable/button"
+                            android:onClick="openWalletStatement"
+                            android:text="Wallet Statement"
+                            android:textSize="@dimen/normal_text_size"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/imgBanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height"
+            android:background="@drawable/addpic3" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.tcs.mmpl.customer.Goibibo.Bus.GoibiboBusCityListActivity">
+
+    <LinearLayout
+        android:id="@+id/linheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/listheader" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linheader"
+        android:layout_above="@+id/imgFooter"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtSearchCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search.."
+            android:inputType="textVisiblePassword" />
+
+        <ListView
+            android:id="@+id/listCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/footer"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

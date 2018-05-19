@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/mainlinear"
+
+    tools:context="com.tcs.mmpl.customer.Activity.CheckBalanceActivity">
+
+    <LinearLayout
+        android:id="@+id/linheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/listheader" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/linheader">
+
+        <TextView
+            android:id="@+id/txtCheckBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/normal_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txtPurse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/normal_text_size"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+
+        <ImageView
+            android:id="@+id/imgBanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height"
+            android:scaleType="fitXY"
+            android:background="@drawable/addpic3" />
+    </LinearLayout>
+
+
+</RelativeLayout>

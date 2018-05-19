@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/listheader" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linheader"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.tcs.mmpl.customer.utility.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                app.pststxtIndicatorColor="#5E88C8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/padding_bottom_for_tab_strip"
+                android:paddingTop="@dimen/padding_top_for_tab_strip"
+                app:pstsDividerColor="@color/white"
+                app:pstsIndicatorColor="@color/blue"
+                app:pstsTabPaddingLeftRight="20dp"
+                app:pstsTextAllCaps="false"
+                app:pstsUnderlineColor="#999999" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tabs" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutFooter"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/linHeader"
+        android:layout_margin="8dp"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:id="@+id/mainlinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_size"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textview"
+                    android:text="Tap to email your detailed statement" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/group2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/idToday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_size"
+                        android:text="Today"
+                        android:textSize="@dimen/normal_text_size"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/idYesterday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_size"
+                        android:text="Yesterday"
+                        android:textSize="@dimen/normal_text_size"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/radioTransactionHistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_size"
+                        android:text="Account Statement"
+                        android:textSize="@dimen/normal_text_size"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/idstatement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_size"
+                        android:checked="true"
+                        android:text="Mail detailed statement"
+                        android:textSize="@dimen/normal_text_size" />
+
+
+                    <RadioButton
+                        android:id="@+id/idministatement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_size"
+                        android:text="Mini Statement"
+                        android:textSize="@dimen/normal_text_size" />
+
+                    <RadioButton
+                        android:id="@+id/idlastfive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="View My Last 5 Transaction"
+                        android:textSize="@dimen/normal_text_size"
+                        android:visibility="gone" />
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:id="@+id/linEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_size"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/edtFromDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/btn_padding_size"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="From Date"
+                        android:onClick="openFromDate"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/normal_text_size" />
+
+                    <EditText
+                        android:id="@+id/edtToDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/btn_padding_size"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="To Date"
+                        android:onClick="openToDate"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/normal_text_size" />
+
+                    <EditText
+                        android:id="@+id/edtEmailID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/btn_padding_size"
+                        android:hint="Email Id"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/normal_text_size" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/idsubmitbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner"
+                    android:padding="@dimen/btn_padding_size"
+                    android:text="@string/button_proceed"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_text_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e7e3e1"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/header" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/idview_my_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/offers1" />
+
+                        <TextView
+                            android:id="@+id/txt_header_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Hot Offers !!"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normal_text_size" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linView1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/textview_rounded_corner"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|right"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/staroffer" />
+
+
+                            <ImageView
+                                android:id="@+id/offer1"
+                                android:layout_width="@dimen/offers_image_width"
+                                android:layout_height="@dimen/offers_image_height"
+                                android:layout_gravity="center"
+                                android:src="@drawable/pizzaic" />
+
+                            <TextView
+
+                                android:id="@+id/txtOffers1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text=" "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/normal_text_size_for_offer" />
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="BUY NOW"
+                                android:textSize="@dimen/normal_text_size"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linView2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textview_rounded_corner"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+
+
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|right"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/staroffer" />
+
+                            <ImageView
+                                android:id="@+id/offer2"
+                                android:layout_width="@dimen/offers_image_width"
+                                android:layout_height="@dimen/offers_image_height"
+                                android:layout_gravity="center"
+                                android:src="@drawable/musicic" />
+
+                            <TextView
+                                android:id="@+id/txtOffers2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="speaker sample image"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/normal_text_size_for_offer" />
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="BUY NOW"
+                                android:textSize="@dimen/normal_text_size"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linView3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/textview_rounded_corner"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|right"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/staroffer" />
+
+
+                            <ImageView
+                                android:id="@+id/offer3"
+                                android:layout_width="@dimen/offers_image_width"
+                                android:layout_height="@dimen/offers_image_height"
+                                android:layout_gravity="center"
+                                android:src="@drawable/pizzaic" />
+
+                            <TextView
+
+                                android:id="@+id/txtOffers3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="pizza sample image"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/normal_text_size_for_offer" />
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="BUY NOW"
+                                android:textSize="@dimen/normal_text_size"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linView4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textview_rounded_corner"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|right"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/staroffer" />
+
+                            <ImageView
+                                android:id="@+id/offer4"
+                                android:layout_width="@dimen/offers_image_width"
+                                android:layout_height="@dimen/offers_image_height"
+                                android:layout_gravity="center"
+                                android:src="@drawable/musicic" />
+
+                            <TextView
+                                android:id="@+id/txtOffers4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="speaker sample image"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/normal_text_size_for_offer" />
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="BUY NOW"
+                                android:textSize="@dimen/normal_text_size"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+
+
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/linView5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/textview_rounded_corner"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|right"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/staroffer" />
+
+
+                            <ImageView
+                                android:id="@+id/offer5"
+                                android:layout_width="@dimen/offers_image_width"
+                                android:layout_height="@dimen/offers_image_height"
+                                android:layout_gravity="center"
+                                android:src="@drawable/pizzaic" />
+
+                            <TextView
+                                android:id="@+id/txtOffers5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="pizza sample image"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/normal_text_size_for_offer" />
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="BUY NOW"
+                                android:textSize="@dimen/normal_text_size"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linView6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textview_rounded_corner"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+
+
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|right"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/staroffer" />
+
+                            <ImageView
+                                android:id="@+id/offer6"
+                                android:layout_width="@dimen/offers_image_width"
+                                android:layout_height="@dimen/offers_image_height"
+                                android:layout_gravity="center"
+                                android:src="@drawable/musicic" />
+
+                            <TextView
+                                android:id="@+id/txtOffers6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="speaker sample image"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/normal_text_size_for_offer" />
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="BUY NOW"
+                                android:textSize="@dimen/normal_text_size"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <GridView
+                    android:id="@+id/offergridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:horizontalSpacing="0dp"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/hamburger_layout"/>
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
+
+
+
+
+
+
+

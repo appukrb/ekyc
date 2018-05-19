@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+
+    <ViewFlipper
+        android:id="@+id/viewflipper_checktransactions"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        >
+
+       <include layout="@layout/fragment_tab_check_transaction"/>
+        <include layout="@layout/mini_statement"/>
+        <include layout="@layout/fragment_view_transaction"/>
+        <!--<include layout="@layout/fragment_confirm_payment_mobile"/>&ndash;&gt;&ndash;&gt;-->
+
+    </ViewFlipper>
+
+
+</LinearLayout>

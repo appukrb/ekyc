@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#ffffff">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupBeneficiary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:id="@+id/radioButton1"
+                            android:textSize="@dimen/normal_text_size"
+
+                            android:visibility="gone"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:id="@+id/radioButton2"
+                            android:textSize="@dimen/normal_text_size"
+
+                            android:visibility="gone"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:textSize="@dimen/normal_text_size"
+
+                            android:id="@+id/radioButton3"
+                            android:visibility="gone"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:textSize="@dimen/normal_text_size"
+
+                            android:id="@+id/radioButton4"
+                            android:visibility="gone"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:id="@+id/radioButton5"
+                            android:textSize="@dimen/normal_text_size"
+
+                            android:visibility="gone"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linBenName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:orientation="vertical">
+
+
+                    <TableLayout
+                        android:id="@+id/maintable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TableLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDeleteSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/btn_padding_size"
+                    android:background="@drawable/rounded_corner"
+                    android:text="@string/button_submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_text_size"
+                    android:visibility="gone"
+
+                    />
+
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

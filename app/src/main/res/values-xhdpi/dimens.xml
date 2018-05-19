@@ -1,0 +1,9 @@
+<resources>
+    
+
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="button_font_size">9sp</dimen>
+    <dimen name="body_font_size">10sp</dimen>
+
+    <dimen name="goi_city_textsize">32sp</dimen>
+</resources>

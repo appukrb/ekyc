@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:orientation="vertical">
+
+    <include layout="@layout/listheader" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_top_size"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/edtmailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter E-Mail ID"
+                        android:layout_marginTop="@dimen/margin_top_size"
+                        android:background="@drawable/edittext"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/normal_text_size"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Request new mPIN here"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/big_text_size"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="* For security reasons please fill in the following details "
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/star_txt"
+                            android:textStyle="italic"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp">
+
+                            <EditText
+                                android:inputType="number"
+                                android:id="@+id/edt_last_trans_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Last Transaction Amount"
+                                android:background="@drawable/edittext"
+                                android:layout_marginTop="@dimen/margin_top_size"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/normal_text_size"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Or"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/normal_text_size"
+                                android:textStyle="italic" />
+                            </LinearLayout>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp">
+
+                            <EditText
+                                android:id="@+id/edtDateOfBirth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/btn_padding_size"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:hint="Date Of Birth"
+                                android:onClick="openDateofBirth"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/normal_text_size"
+                                android:background="@drawable/edittext"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtotp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="OTP"
+                        android:maxLength="4"
+                        android:textColor="#000000"
+                        android:background="@drawable/edittext"
+                        android:textSize="@dimen/normal_text_size"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="@dimen/margin_top_size"
+                        android:paddingRight="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_new_mPIN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberPassword"
+                        android:hint="New mPIN"
+                        android:maxLength="4"
+                        android:textColor="#000000"
+                        android:background="@drawable/edittext"
+                        android:textSize="@dimen/normal_text_size"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="@dimen/margin_top_size"
+                        android:paddingRight="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etconf_mPIN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberPassword"
+                        android:hint="Re-Enter New mPIN "
+                        android:maxLength="4"
+                        android:textColor="#000000"
+                        android:background="@drawable/edittext"
+                        android:textSize="@dimen/normal_text_size"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="@dimen/margin_top_size"
+                        android:paddingRight="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/header_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txtSMSAlert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Note:please enter old mPIN as received by SMS"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/normal_text_size"
+                        android:textStyle="italic" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/btn_margin_top"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/btnOTPresend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner"
+                        android:padding="@dimen/btn_padding_size"
+                        android:text="Resend OTP"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/normal_text_size"
+                        android:layout_marginRight="10dp"
+                        />
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/btnOtpSubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner"
+                        android:padding="@dimen/btn_padding_size"
+                        android:text="@string/button_submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/normal_text_size" />
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* Please do not use your last 3 mPINs "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/star_txt"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

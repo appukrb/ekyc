@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.tcs.mmpl.customer.Activity.RessyActivity">
+
+    <LinearLayout
+        android:id="@+id/linHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#e7e3e1"
+        android:orientation="vertical">
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linHeader">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:id="@+id/linCoupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+
+
+
+                <EditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linCoupon"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/rounded_chat_box"
+                    android:drawableRight="@android:drawable/ic_menu_search"
+                    android:hint="Enter Restaurant Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:layout_weight="1.5"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnCoupons"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_chat_box"
+                    android:onClick="myCoupons"
+                    android:padding="5dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/button_coupons"
+                    android:textSize="@dimen/small_text_size"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linCoupon"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtComingSoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/blue"
+                android:text=""
+                android:visibility="gone"
+                android:textSize="@dimen/normal_text_size"/>
+        </RelativeLayout>
+
+
+        <include layout="@layout/hamburger_layout" />
+
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

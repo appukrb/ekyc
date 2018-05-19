@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+
+        android:title="Recharge &amp; Pay"
+        android:visible="false"/>
+
+    <item android:title="My Account"/>
+
+    <item
+        android:title="Offers" />
+
+
+    <item
+
+        android:title="Request Money" />
+
+    <item
+
+        android:title="Money Transfer"
+        android:visible="false"/>
+
+    <item
+
+        android:title="Quick Transfer"
+        android:visible="false"/>
+
+    <item
+
+        android:title="Load Wallet"
+        android:visible="false"/>
+
+
+
+    <item
+
+        android:title="Manage Beneficiary"
+        android:visible="false"/>
+    
+    <item
+        android:id="@+id/one"
+        android:theme="@style/MenuTheme"
+        android:title="FAQs" />
+
+    <item
+        android:id="@+id/two"
+        android:title="Terms &amp; Conditions" />
+
+    <item
+        android:id="@+id/three"
+        android:title="Privacy Policy" />
+
+    <item
+
+        android:title="About Us" />
+    <item
+
+        android:title="Contact Us" />
+    <item
+
+        android:title="Feedback" />
+    <item
+
+        android:title="Rate Us"/>
+    </menu>
+    
+

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"    android:background="#ffffff">
+
+    <ScrollView
+        android:id="@+id/scrollViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearLayoutFooter">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#ffffff">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        <EditText
+            android:id="@+id/edtName_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number/Email Id*:"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="13dp"
+            android:id="@+id/idprofileimg"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/idfav_new_img"
+            android:background="@drawable/profileimg"
+            android:padding="3dp"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/idfav_new_img"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/fav_new"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        <EditText
+            android:id="@+id/edtEnter_Amount1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount* ₹ :"
+            android:textSize="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        <EditText
+            android:id="@+id/edtComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comment* :"
+            android:textSize="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        <EditText
+            android:id="@+id/edtEnter_mPIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mPIN* :"
+            android:textSize="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/checkbox_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+
+  >
+        <CheckBox
+            android:id="@+id/chk_quick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:text="SAVE AS FAVORITE"
+            android:textSize="16dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="REQUEST MONEY"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/requestmoneybtn"
+            android:layout_marginBottom="15dp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+  <!--  <LinearLayout
+
+        android:id="@+id/linearLayoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#f0b26f"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/addpic3"
+            />
+    </LinearLayout>-->
+
+</RelativeLayout>
+    <!-- <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText4"
+            android:layout_below="@+id/editText4"
+            android:layout_marginTop="27dp"
+            android:text="SAVE AS FAVORITE" />-->

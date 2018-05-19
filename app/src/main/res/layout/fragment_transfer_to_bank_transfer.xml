@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:id="@+id/scrollViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutFooter"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Receipt"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/edittext"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_bene_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Status:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+
+                <TextView
+                    android:id="@+id/txtStatusDone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ERROR"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/edittext"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Beneficiary Nick Name:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+
+                <TextView
+
+                    android:id="@+id/txtBeneficiaryNickNameDone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Field Entered Here"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/edittext"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_acc_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Bank Account No.:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+
+                <TextView
+                    android:id="@+id/txtBankAccountNumberDone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Field Entered Here"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/edittext"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_ifsc_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Bank IFSC Code:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+
+                <TextView
+                    android:id="@+id/txtBankIFSCCodeDone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Field Entered Here"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/edittext"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_bank_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Bank Name:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+
+                <TextView
+                    android:id="@+id/txtBankNameDone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Field Entered Here"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/edittext"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/txt_products"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Products:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+
+                <TextView
+                    android:id="@+id/txtProductDone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Field Entered Here"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/edittext"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Amount(Rs.):"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+
+                <TextView
+                    android:id="@+id/txtAmountDone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Field Entered Here"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/edittext"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_fee"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Transaction Fee(Rs.):"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+
+                <TextView
+                    android:id="@+id/txtTransactionFeeDone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Field Entered Here"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/edittext"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Total Amount(Rs.):"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+
+                <TextView
+                    android:id="@+id/txtTotalAmountDone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Field Entered Here"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/edittext"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Remark:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+
+                <TextView
+                    android:id="@+id/txtRemarkDone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Transaction amount cannot be greater than balance"
+
+                    android:textSize="@dimen/normal_text_size"
+
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/edittext"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Date and Time:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+
+                <TextView
+                    android:id="@+id/txtDateAndTimeDone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Field Entered Here"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_text_size"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/button_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+
+                <Button
+                    android:id="@+id/btnHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/btn_padding_size"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner"
+                    android:text="@string/button_home"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_text_size"
+
+                    />
+
+
+                <Button
+                    android:id="@+id/btnAnotherTransaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/btn_padding_size"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner"
+                    android:text="@string/button_another_transaction"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_text_size" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--<LinearLayout
+
+        android:id="@+id/linearLayoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#f0b26f"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/addpic3"
+            />
+    </LinearLayout>
+-->
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

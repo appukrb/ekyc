@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linParent"
+    android:background="@color/white"
+    tools:context="com.tcs.mmpl.customer.Activity.RequestMoneyStatementActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btnRequestStatement"
+        android:orientation="vertical">
+
+        <include layout="@layout/listheader"/>
+
+        <ListView
+            android:id="@+id/listStatement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnRequestStatement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/rounded_corner"
+        android:onClick="done"
+        android:padding="@dimen/btn_padding_size"
+        android:text="@string/button_done"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_text_size" />
+
+</RelativeLayout>

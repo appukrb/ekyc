@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e7e3e1"
+        android:orientation="vertical">
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_top_size"
+            android:background="#ffffff">
+
+            <ScrollView
+                android:id="@+id/scrollViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayoutFooter"
+
+                android:layout_alignParentTop="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Request Money"
+                            android:textSize="@dimen/headding_text_size"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/margin_top_size"
+
+                            >
+
+
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:text="+91"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/normal_text_size" />
+
+                            <EditText
+                                android:id="@+id/edtRequestMoneyMobileNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:drawableRight="@drawable/contact"
+                                android:hint="Mobile Number"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+
+                                android:textSize="@dimen/normal_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:orientation="vertical"
+
+                            >
+
+                            <EditText
+                                android:id="@+id/edtRequestMoneyAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_top_size"
+                                android:background="@null"
+                                android:hint="Amount"
+                                android:inputType="numberDecimal"
+                                android:maxLength="6"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textSize="@dimen/normal_text_size" />
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/button_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_top_size"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+
+
+                            <Button
+                                android:id="@+id/btnRequest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_corner"
+                                android:padding="@dimen/btn_padding_size"
+                                android:text="@string/button_request_money"
+                                android:onClick="requestMoney"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/normal_text_size"
+
+
+                                />
+
+                            <Button
+                                android:id="@+id/btnRequestStatement"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_corner"
+                                android:padding="@dimen/btn_padding_size"
+                                android:layout_marginTop="@dimen/margin"
+                                android:text="@string/button_request_money_statement"
+                                android:onClick="requestMoneyStatement"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/normal_text_size"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+
+                android:id="@+id/linearLayoutFooter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#f0b26f" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/addpic3" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/hamburger_layout"/>
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
+
+
+

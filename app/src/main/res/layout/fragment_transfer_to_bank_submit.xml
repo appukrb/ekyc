@@ -1,0 +1,263 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:id="@+id/scrollViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutFooter"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtName_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Beneficiary Id*:"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/idprofileimg"
+                    android:layout_width="28dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toLeftOf="@+id/idfav_new_img"
+                    android:background="@drawable/profileimg"
+                    android:padding="3dp" />
+
+                <ImageView
+                    android:id="@+id/idfav_new_img"
+                    android:layout_width="28dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/fav_new" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtBeneficiary_Account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Account No.:"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtBeneficiary_Account2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="IFSC Code:"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtBeneficiary_Account1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bank Name:"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtEnter_mPIN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="mPIN* :"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Comment* :"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/submitbtn1"
+                    android:text="CONFIRM"
+                    android:textColor="#ffffff"
+
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--  <LinearLayout
+
+          android:id="@+id/linearLayoutFooter"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="bottom"
+          android:layout_alignParentBottom="true"
+          >
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="3dp"
+              android:background="#f0b26f"
+              />
+
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:layout_marginTop="2dp"
+              android:background="@drawable/addpic3"
+              />
+      </LinearLayout>-->
+
+</RelativeLayout>
+
+
+    <!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/white"
+android:orientation="vertical" >
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dp"
+android:orientation="vertical"
+>
+ <EditText
+     android:id="@+id/edt_bene_name"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:hint="Beneficiary Name:"
+ android:textColor="@android:color/black"
+     />
+ <EditText
+  android:id="@+id/edt_acc_num"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:hint="Account No.*:"
+ android:textColor="@android:color/black"
+     />
+ <EditText
+   android:id="@+id/edt_ifsc_code"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:hint="IFSC Code:"
+ android:textColor="@android:color/black"
+     />
+ <EditText
+  android:id="@+id/edt_bank_name"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:hint="Bank Name:"
+ android:textColor="@android:color/black"
+     />
+ <EditText
+  android:id="@+id/edt_amount"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:hint="Amount:"
+ android:textColor="@android:color/black"
+     />
+ <EditText
+  android:id="@+id/edt_comment"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:hint="Comment:"
+ android:textColor="@android:color/black"
+     />
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/button_linear"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_marginTop="20dp"
+android:gravity="center"
+android:orientation="horizontal"
+android:weightSum="2" >
+<Button
+    android:id="@+id/btn_confirm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="CONFIRM"
+     android:background="#5E88C8"
+     android:textColor="@android:color/white"
+     />
+</LinearLayout>
+
+</LinearLayout>
+
+
+-->
+

@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcs.mmpl.customer.Activity.StoreActivity">
+
+
+    <TextView
+        android:id="@+id/txtStores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_centerInParent="true"
+        android:text="Oops ! No stores available for this brand currently."
+        android:textSize="@dimen/normal_text_size"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/listStores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+</RelativeLayout>

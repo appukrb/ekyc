@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tcs.mmpl.customer">
+    <!--android:installLocation="auto">-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.tcs.mmpl.customer.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.tcs.mmpl.customer.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission
+        android:name="com.tcs.mmpl.customer.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+<!--android:allowBackup="true"-->
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDWJherpBt_NICisiSlCbtRDRqAH4334FE" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Activity.HomeScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- android:name=".Activity.MainActivity" -->
+        <!-- <activity -->
+        <!-- android:name=".Activity.RessyActivity" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:screenOrientation="portrait" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+            <!--android:name=".Activity.HomeScreenActivity"-->
+            <!--android:label="@string/title_activity_home_screen"-->
+            <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".Activity.Electricity_Payment"
+            android:label="@string/title_activity_electricity__payment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.LoadwalletActivity"
+            android:label="@string/title_activity_loadwallet"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.MyAcount"
+            android:label="@string/title_activity_my_acount"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.Invite_Friend_Activity"
+            android:label="@string/title_activity_invite__friend_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.View_My_Profile"
+            android:label="@string/title_activity_view__my__profile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.Detact_Mobile_NumberActivity"
+            android:label="@string/title_activity_detact__mobile__number"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.ConfirmMobileActivity"
+            android:label="@string/title_activity_confirm_mobile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.ChangeMPINActivity"
+            android:label="@string/title_activity_change_mpin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.QuickTransferActivity"
+            android:label="@string/title_activity_quick_transfer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.WebActivity"
+            android:label="@string/title_activity_web"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.LoadSuccessActivity"
+            android:label="@string/title_activity_load_success"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.billdesk.sdk.PaymentOptions" />
+        <activity
+            android:name="com.billdesk.sdk.BankList"
+            android:theme="@style/Theme.BD_Dialog" />
+        <activity
+            android:name="com.billdesk.sdk.QuickPayView"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.billdesk.sdk.CreditCardView"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.billdesk.sdk.PaymentWebView"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.billdesk.library.OtpDialogActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.billdesk.utils.URLUtilActivity"
+            android:configChanges="keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".Activity.ViewTransactionActivity"
+            android:label="@string/title_activity_view_transaction"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.MoneyTransferActivity"
+            android:label="@string/title_activity_money_transfer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.CheckBalanceActivity"
+            android:label="@string/title_activity_check_balance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OperatorListActivity"
+            android:label="@string/title_activity_dthlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CheckTransactionsActivity"
+            android:label="@string/title_activity_check_transactions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.FavoriteActivity"
+            android:label="@string/title_activity_favorite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ViewFavoriteActivity"
+            android:label="@string/title_activity_view_favorite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PlanListActivity"
+            android:label="@string/title_activity_plan_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OffersActivity"
+            android:label="@string/title_activity_offers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LoadMoneyActivity"
+            android:label="@string/title_activity_load_money"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SendMoneyActivity"
+            android:label="@string/title_activity_send_money"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.AlertActivity"
+            android:label="@string/title_activity_alert"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Shopping"
+            android:label="@string/title_activity_shopping"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".utility.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.tcs.mmpl.customer" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".utility.SmsReciever">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".utility.SmsReciever_one">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".utility.SmsReciever_Two">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".utility.UnlockReciever">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".utility.GcmIntentService" />
+
+        <activity
+            android:name=".Activity.BrowsePlanListActivity"
+            android:label="@string/title_activity_browsw_plan_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ChooseOperatorMobile"
+            android:label="@string/title_activity_choose_operator_mobile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MerchantPayment"
+            android:label="@string/title_activity_merchant_payment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.RequestMoneyActivity"
+            android:label="@string/title_activity_request_money"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.LoadMoneyWebActivity"
+            android:label="@string/title_activity_load_money_web"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.WalletStatement"
+            android:label="@string/title_activity_wallet_statement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.BrowsePlanTabActivity"
+            android:label="@string/title_activity_browse_plan_tab"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.BrowsePlanTabListActivity"
+            android:label="@string/title_activity_browse_plan_tab_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ServiceProviderListActivity"
+            android:label="@string/title_activity_service_provider_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.StateListActivity"
+            android:label="@string/title_activity_state_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.AccountTypeActivity"
+            android:label="@string/title_activity_account_type"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Coupon"
+            android:label="@string/title_activity_coupon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PlanTypeList"
+            android:label="@string/title_activity_plan_type_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.MerchantPaymentNew"
+            android:label="@string/title_activity_merchant_payment_new"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.SkillAngels"
+            android:label="@string/title_activity_skill_angels"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.SBCTerms"
+            android:label="@string/title_activity_sbcterms"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.Redeem"
+            android:label="@string/title_activity_redeem"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.MerchantList"
+            android:label="@string/title_activity_merchant_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.SkillAngelsPayment"
+            android:label="@string/title_activity_skill_angels_payment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.Update_App_Activty"
+            android:label="@string/title_activity_update__app__activty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.OTPActivity"
+            android:label="@string/title_activity_otp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.MerchantTransferNew"
+            android:label="@string/title_activity_merchant_transfer_new"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.MerchantCategoryList"
+            android:label="@string/title_activity_merchant_category_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.RequestMoneyStatementActivity"
+            android:label="@string/title_activity_request_money_statement"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.CarouselBanner"
+            android:label="@string/title_activity_carousel_banner"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.ForgotMPINActivity"
+            android:label="@string/title_activity_forgot_mpin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.LoadwalletLowBalance"
+            android:label="@string/title_activity_loadwallet_low_balance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.LoadSuccessForLowBalanceActivity"
+            android:label="@string/title_activity_load_success_for_low_balance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Goibibo.GoibiboActivity"
+            android:label="@string/title_activity_goibibo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.PurseMainBalanceActivity"
+            android:label="@string/title_activity_purse_main_balance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.PurseSubBalanceActivity"
+            android:label="@string/title_activity_purse_sub_balance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.MobileConnectActivity"
+            android:label="@string/title_activity_mobile_connect"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- <activity -->
+        <!-- android:name=".Goibibo.Bus.GoibiboBusActivity" -->
+        <!-- android:label="@string/title_activity_goibibo_bus" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name=".Goibibo.Flight.GoibiboFlightActivity" -->
+        <!-- android:label="@string/title_activity_goibibo_flight" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <activity
+            android:name=".Activity.KYCActivity"
+            android:label="@string/title_activity_kyc"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.KycDocumentList"
+            android:label="@string/title_activity_kyc_document_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Goibibo.Bus.GoibiboBusSearchOneWayActivity"
+            android:label="@string/title_activity_goibibo_bus_search"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.DetailedStatementActivity"
+            android:label="@string/title_activity_detailed_statement"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Goibibo.Bus.GoibiboBusSearchRoundTripActivity"
+            android:label="@string/title_activity_goibibo_bus_search_round_trip"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Goibibo.Bus.GoibiboBusSeatMapActivity"
+            android:label="@string/title_activity_goibibo_bus_seat_map"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- <activity -->
+        <!-- android:name=".Goibibo.Hotel.GoibiboHotelActivity" -->
+        <!-- android:label="@string/title_activity_goibibo_hotel" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <activity
+            android:name=".Goibibo.Bus.GoibiboBusBookingReviewActivity"
+            android:label="@string/title_activity_goibibo_bus_booking_review"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Goibibo.Bus.GoibiboBusBoardingPointActivity"
+            android:label="@string/title_activity_goibibo_bus_boarding_point" />
+        <activity
+            android:name=".Goibibo.Bus.GoibiboBusTravellerActivity"
+            android:label="@string/title_activity_goibibo_bus_traveller" />
+        <activity
+            android:name=".Goibibo.Flight.GoibiboFlightSearchOneWayActivity"
+            android:label="@string/title_activity_goibibo_flight_search_one_way"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Goibibo.Flight.GoibiboFlightSearchRoundTripActivity"
+            android:label="@string/title_activity_goibibo_flight_search_round_trip"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Goibibo.Bus.GoibiboBusCityListActivity"
+            android:label="@string/title_activity_bus_city_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- <activity -->
+        <!-- android:name=".Goibibo.GoibiboMyBookingsActivity" -->
+        <!-- android:label="@string/title_activity_goibibo_my_bookings" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <activity
+            android:name=".Goibibo.Flight.GoibiboFlightBookReviewActivity"
+            android:label="@string/title_activity_goibibo_flight_book_review"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.ViewBeneficiaryActivity"
+            android:label="@string/title_activity_view_beneficiary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Goibibo.Flight.GoibiboFlightCityListActivity"
+            android:label="@string/title_activity_goibibo_flight_city_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Goibibo.Flight.GoibiboFlightAdultTravellerActivity"
+            android:label="@string/title_activity_goibibo_flight_adult_traveller"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Goibibo.Flight.GoibiboFlightChildInfantTravellerActivity"
+            android:label="@string/title_activity_goibibo_flight_child_infant_traveller"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.SelectIFSCCodeActivity"
+            android:label="@string/title_activity_select_ifsccode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activity.AddedTransactionActivity" />
+        <activity
+            android:name=".Goibibo.Hotel.GoibiboHotelCityListActivity"
+            android:label="@string/title_activity_goibibo_hotel_city_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.GCIActivity"
+            android:label="@string/title_activity_gci"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.BrandDenominationActivity"
+            android:label="@string/title_activity_brand_denomination"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.DenominationActivity"
+            android:label="@string/title_activity_denomination"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.StoreActivity"
+            android:label="@string/title_activity_store"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.TermsActivity"
+            android:label="@string/title_activity_terms"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.DenominationTransactionActivity"
+            android:label="@string/title_activity_denomination_transaction"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.PayNowBeneficiaryActivity"
+            android:label="@string/title_activity_pay_now_beneficiary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Goibibo.Hotel.GoibiboHotelSearchActivity"
+            android:label="@string/title_activity_goibibootel_search" />
+        <activity
+            android:name=".Goibibo.Hotel.GoibiboHotelViewActivity"
+            android:label="@string/title_activity_goibibo_hotel_view" />
+        <activity
+            android:name=".Goibibo.Hotel.GoibiboHotelSelectRoom"
+            android:label="@string/title_activity_goibibo_hotel_select_room" />
+        <activity
+            android:name=".Goibibo.Hotel.GoibiboHotelBookReviewActivity"
+            android:label="@string/title_activity_goibibo_hotel_book_review" />
+        <activity
+            android:name=".Goibibo.Hotel.GoibiboHotelCancelPolicyActivity"
+            android:label="@string/title_activity_hotel_cancel_policy" />
+        <activity
+            android:name=".Goibibo.Bus.GoibiboBusCancelPolicyActivity"
+            android:label="@string/title_activity_goibibo_bus_cancel_policy" />
+        <activity
+            android:name=".Activity.StoreMapActivity"
+            android:label="@string/title_activity_store_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SelfHelpActivity"
+            android:label="@string/title_activity_self_help"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SelfHelpFAQActivity"
+            android:label="@string/title_activity_self_help_faq"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SelfHelpFeedback"
+            android:label="@string/title_activity_self_help_feedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SelfHelpFeedbackMerchantActivity"
+            android:label="@string/title_activity_self_help_feedback_merchant"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SelfHelpAppIssueActivity"
+            android:label="@string/title_activity_self_help_app_issue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SelfHelpFeedbackBankActivity"
+            android:label="@string/title_activity_self_help_feedback_bank"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PastIssuesDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/title_activity_past_issues"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.HotelLocationActivity"
+            android:label="@string/title_activity_hotel_location"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.HotelMerchantActivity"
+            android:label="@string/title_activity_hotel_merchant"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.SelfHelpFAQFragmentActivity"
+            android:label="@string/title_activity_self_help_faqfragment" />
+        <activity
+            android:name=".Activity.HPCLActivity"
+            android:label="@string/title_activity_hpcl"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.RessyActivity"
+            android:label="@string/title_activity_ressy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.RestaurantDetailsActivity"
+            android:label="@string/title_activity_restaurant_details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.RestaurantCouponActivity"
+            android:label="@string/title_activity_restaurant_coupon"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.RestaurantInvoiceActivity"
+            android:label="@string/title_activity_restaurant_invoice"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.UnlockMPINActivity"
+            android:label="@string/title_activity_unlock_mpin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.MyCouponsActivity"
+            android:label="@string/title_activity_my_coupons"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.MerchantLandingActivity"
+            android:label="@string/title_activity_merchant_landing"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.PullMoneyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.BillDeskActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.BilldeskListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.TxnHistoryMerchantActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.DetailedStatementyMerchantActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activity.MerchantProfileActivity"></activity>
+    </application>
+
+</manifest>

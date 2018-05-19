@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:id="@+id/scrollViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#ffffff"
+                android:orientation="vertical">
+                <!-- android:background="#e7e3e1"-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+
+                        android:gravity="center"
+
+                        android:text="Select the Denomination to" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="LOAD WALLET"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20dp" />
+
+
+                    <Spinner
+                        android:id="@+id/spinnerAmount"
+                        style="@style/spinner_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="75dp"
+                        android:prompt="@string/amount_prompt"
+
+
+                        />
+
+
+                    <EditText
+                        android:id="@+id/edtMpin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinnerAmount"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"
+                        android:hint="mPIN:"
+                        android:textSize="16dp">
+
+                        <requestFocus />
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/btnLoadMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/edtMpin"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/submitbtn1"
+                        android:text="LOAD MONEY"
+                        android:textColor="#ffffff"
+                        android:padding="5dp"
+                        />
+
+
+                </RelativeLayout>
+                <!-- <LinearLayout
+
+                     android:id="@+id/linearLayoutFooter"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:gravity="bottom"
+                     android:layout_alignParentBottom="true"
+                     >
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="3dp"
+                         android:background="#f0b26f"
+                         />
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="50dp"
+                         android:layout_marginTop="2dp"
+                         android:background="@drawable/addpic3"
+                         />
+                 </LinearLayout>-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,536 @@
+<resources>
+    <string name="app_name">mRUPEE</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_home_screen">HomeScreenActivity</string>
+    <string name="title_activity_electricity__payment">Electricity_Payment</string>
+    <string name="title_activity_loadwallet">LoadwalletActivity</string>
+    <string name="title_activity_load_money">Load_moneyActivity</string>
+    <string name="app_version">2.5.3</string>
+    <string name="title_activity_fragment_tab__load__money">FragmentTab_Load_Money</string>
+    <string-array name="spinner_arrays">
+        <item>Ahmedabad</item>
+        <item>Surat</item>
+        <item>Rajkot</item>
+        <item>Baroda</item>
+        <item>Gandhinagar</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="invalid_mobile">Please enter a Mobile Number</string>
+    <string name="invalid_amount">Please enter the amount</string>
+    <string name="invalid_date">Please enter valid date</string>
+
+    <string name="invalid_mpin">Please enter the mPIN</string>
+    <string name="invalid_subscriber_id">Please enter a Subscriber ID</string>
+    <string name="invalid_dth_operator">Please select DTH operator</string>
+    <string name="invalid_landline_operator">Please select Landline operator</string>
+    <string name="invalid_state">Please select State</string>
+    <string name="invalid_landline_number">Please enter STD Code &amp; Landline Number</string>
+    <string name="invalid_request_number">You can not send a request to your own account</string>
+    <string name="invalid_datacard_number">Please enter Data Card Number</string>
+    <string name="invalid_datacard_operator">Please select Data Card operator</string>
+    <string name="invalid_ca_number">Please enter Cutomer Account Number</string>
+    <string name="invalid_service_provider">Please select Service Provider</string>
+    <string name="invalid_merchant_name">Please enter Merchant Name</string>
+    <string name="invalid_merchant_alternate_name">Please enter Alternate Name</string>
+    <string name="invalid_email">Please enter Valid Email Id</string>
+    <string name="invalid_merchant">Please enter Merchant or Merchant Mobile Number</string>
+    <string name="invalid_merchant_type">Please select Merchant Type</string>
+    <string name="invalid_mobile_number">Please enter Valid Number</string>
+    <string name="invalid_city">Please select proper city</string>
+    <string name="block1">You seem to have been using the app in more than two devices.Please select YES if you would want to send a request for approval for this device</string>
+    <string name="block2">Your device is already associated with a number in our system. Please select YES if you would want to send a request to block this device</string>
+    <string name="invalid_from">Please enter source city</string>
+    <string name="invalid_to">Please enter destination city</string>
+    <string name="invalid_source_destination">same source and destination</string>
+    <string name="invalid_otp">Please enter Valid OTP</string>
+    <string name="mandatory_field">Please enter Valid Mandatory Field</string>
+    <string name="mandatory_field1">Please enter Last Transaction Amount or Date of Birth</string>
+    <string name="mandatory_field2">Please enter Date of Birth</string>
+    <string name="email_dob">Please enter Email Id or Date of Birth</string>
+    <string name="last_trans">Please enter Last Transaction Amount</string>
+    <string name="amount_prompt">Select Amount</string>
+    <string name="title_activity_my_acount">MyAcount</string>
+    <string name="title_activity_invite__friend_">Invite_Friend_Activity</string>
+    <string name="title_activity_view__my__profile">View_My_Profile</string>
+    <string name="title_activity_detact__mobile__number">Detact_Mobile_NumberActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_confirm_mobile">ConfirmMobileActivity</string>
+    <string name="title_activity_change_mpin">ChangeMPINActivity</string>
+    <string name="title_activity_quick_transfer">QuickTransferActivity</string>
+    <string name="display_app_name">mRUPEE</string>
+    <string name="new_user">Please register with mRupee to continue.</string>
+    <string name="mother_maiden_name">Mother\'s Maiden Name</string>
+    <string name="make_payment">\nDo you want to make Another Payment</string>
+    <string name="make_transfer">\nDo you want to make Another Transfer?</string>
+    <string name="no_network">We can\'t detect any internet connectivity.Please check your internet connection and try again.</string>
+    <string name="valid_mobile">Please enter a valid mobile number</string>
+    <string name="not_valid_user">Please register  with mRupee.</string>
+    <string name="less50">Please enter less than 50 characters </string>
+
+    <!--<string name="apidown">Oops! We can\'t make this available at the moment. Please try after sometime.</string>-->
+    <string name="apidown">We are experiencing some issues at the moment. Please try again later.</string>
+    <string name="validation">Please enter valid values for processing payment.</string>
+    <string name="invalid_ten_digit_mobile">Please enter a valid 10 digit Mobile Number</string>
+    <string name="common_validation">Please enter valid values.</string>
+    <string name="valid_name">Please enter valid Name.</string>
+    <string name="valid_first_name">Please enter valid First Name.</string>
+    <string name="valid_last_name">Please enter valid Last Name.</string>
+    <string name="invalid_dob">Please select valid Date Of Birth.</string>
+    <string name="invalid_document">Please select valid Document.</string>
+    <string name="invalid_image">Please select Image.</string>
+    <string name="invalid_front_image">Please choose Proof Of Address.</string>
+    <string name="invalid_back_image">Please choose Proof Of Identity.</string>
+    <string name="invalid_photo">Please choose Photo.</string>
+    <string name="invalid_mother_name">Please enter Mother\'s Maiden Name</string>
+    <string name="invalid_pincode">Please enter a valid Pincode.</string>
+    <string name="invalid_age">Please enter a valid Age.</string>
+    <string name="invalid_traveller">Please add a traveller.</string>
+    <string name="terms_and_condition">Please agree to terms and conditions.</string>
+    <string name="rate_title">Rate us</string>
+    <string name="rate_explanation">If you enjoy using mRUPEE, please take a moment to rate us. It won’t take more than a minute. Thank you for your support!</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="rate_later">Remind Later</string>
+    <string name="rate_never">No,thanks</string>
+    <string name="invalid_infant_count">Infant count cannot be greater than adult count</string>
+    <string name="mpin">Please enter valid mPIN.</string>
+    <string name="oldmpin">Please enter valid Old mPIN.</string>
+    <string name="newmpin">Please enter valid New mPIN.</string>
+    <string name="Confirmmpin">Please enter valid Confirm mPIN.</string>
+    <string name="mpinnotmatching">MPIN is not matching</string>
+    <string name="termsandcondition">Please agree to terms and conditions</string>
+    <string name="invalidamount">Please enter valid amount</string>
+    <string name="invalidamount1">Please enter valid amount</string>
+    <string name="invalidmpin">Please enter valid mpin</string>
+    <string name="validbeneficary">Please select beneficiary</string>
+    <string name="beneficarynotfound">Please add beneficiary to continue</string>
+    <string name="amount_limit">Please enter the amount in range 2 - 4</string>
+    <string name="dth_amount">Please enter amount minimum 100 maximum 9999</string>
+    <string name="billcycle_limit">Please enter the bill cycle in range 1 - 31</string>
+    <string name="no_balance">You have Insufficient Balance in your wallet, Please load the wallet</string>
+    <string name="upgrade"><u>Upgrade Your Wallet</u></string>
+    <string name="notificationFlag">notificationFlag</string>
+    <string name="notificationTitle">notificationHeading</string>
+    <string name="notificationMessage">notificationMessage</string>
+    <string name="hpcl_sub_list">1.Head to your nearest HPCL petrol pumps\n\n2.Open your mRUPEE app in your mobile\n\n3.Get the OTP using OTP icon at the top right of the home screen(OTP is valid for 4 hours)\n\n4.Enter your mobile number and OTP into the POS machine\n\n5.Transaction complete</string>
+    <string name="ressy_list">1.Show this to the manager once you enter the restaurant\n\n2.Once you are done with your meal, click on the proceed button to pay\n\n3.Enter the discounted amount and your mPIN\n\n4.Transaction complete</string>
+
+    <string name="getOperatorNew_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getOperatorNew</string>
+    <string name="getMobileBrowsePlan_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getMobileBrowsePlan</string>
+    <string name="updateGCMDetails"> https://app.mrupee.in:8443/mRupeeServiceNew/updateGCMDetails</string>
+    <string name="getUserStatus"> https://app.mrupee.in:8443/mRupeeServiceNew/getUserStatus</string>
+    <string name="billPayment"> https://app.mrupee.in:8443/mRupeeServiceNew/billPayment</string>
+    <string name="quickPay"> https://app.mrupee.in:8443/mRupeeServiceNew/quickPay</string>
+    <string name="wallettowallet"> https://app.mrupee.in:8443/mRupeeServiceNew/transferMoneyWallet2Wallet</string>
+    <string name="register"> https://app.mrupee.in:8443/mRupeeServiceNew/userCreationNew</string>F
+    <string name="changempin"> https://app.mrupee.in:8443/mRupeeServiceNew/changeMPIN</string>
+    <string name="billDeskConnect_old"> https://app.mrupee.in:8443/mRupeeServiceNew/billDeskConnectNew</string>
+    <string name="billDeskConnect"> https://app.mrupee.in:8443/mRupeeServiceNew/billDeskConnectUpdate</string>
+    <string name="addNewBankBeneficiary"> https://app.mrupee.in:8443/mRupeeServiceNew/addBankBeneficiary</string>
+    <string name="getBeneficiary"> https://app.mrupee.in:8443/mRupeeServiceNew/getBeneficiary</string>
+    <string name="transactionDetails"> https://app.mrupee.in:8443/mRupeeServiceNew/getAllTranscationDetail</string>
+    <string name="transfertobank"> https://app.mrupee.in:8443/mRupeeServiceNew/transferWalletToBank</string>
+    <string name="deleteBankBeneficiary"> https://app.mrupee.in:8443/mRupeeServiceNew/deleteBankBeneficiary</string>
+    <string name="lastfivetransaction"> https://app.mrupee.in:8443/mRupeeServiceNew/getLast5Transaction</string>
+    <string name="ministatement"> https://app.mrupee.in:8443/mRupeeServiceNew/getMiniStatement</string>
+    <!--<string name="account_statement"> https://app.mrupee.in:8443/mRupeeServiceNew/getTxnHistory</string>-->
+    <string name="account_statement"> https://app.mrupee.in:8443/mRupeeServiceNew/getTxnHistoryReport</string>
+    <string name="addfavourites"> https://app.mrupee.in:8443/mRupeeServiceNew/addFavourite</string>
+    <string name="getfavourites"> https://app.mrupee.in:8443/mRupeeServiceNew/getFavourite</string>
+    <string name="delfavourites"> https://app.mrupee.in:8443/mRupeeServiceNew/deleteFavourite</string>
+    <string name="checkVersion"> https://app.mrupee.in:8443/mRupeeServiceNew/checkVersion</string>
+    <string name="loadMoneyMessage"> https://app.mrupee.in:8443/mRupeeServiceNew/loadMoneyMessageNew</string>
+    <string name="CreditCardMessage"> https://app.mrupee.in:8443/mRupeeServiceNew/CreditCardMessage</string>
+    <string name="getbanner"> https://app.mrupee.in:8443/mRupeeServiceNew/getBanner</string>
+    <string name="getbannernew"> https://app.mrupee.in:8443/mRupeeServiceNew/getBannerNew</string>
+    <string name="getmultibanner"> https://app.mrupee.in:8443/mRupeeServiceNew/getMultiBanner</string>
+    <string name="promocode"> https://app.mrupee.in:8443/mRupeeServiceNew/updatePromoCode</string>
+    <string name="getOperator">http://nexgenfmpl.com/numberdemo/WebService/listUniqOperator</string>
+    <string name="loadWallet"> https://app.mrupee.in:8443/mRupeeServiceNew/loadWallet</string>
+    <string name="requestMoney"> https://app.mrupee.in:8443/mRupeeServiceNew/requestMoneyNew</string>
+    <string name="getKycStatus"> https://app.mrupee.in:8443/mRupeeServiceNew/getKycStatus</string>
+    <string name="merchantPayment"> https://app.mrupee.in:8443/mRupeeServiceNew/merchantPayment</string>
+    <string name="loadwalletStatement"> https://app.mrupee.in:8443/mRupeeServiceNew/loadwalletStatement</string>
+    <!--<string name="loadwalletStatement"> https://app.mrupee.in:8443/mRupeeServiceNew/loadwalletStatementNew</string>-->
+    <string name="service_provider"> https://app.mrupee.in:8443/mRupeeServiceNew/getServiceProviderNew</string>
+    <string name="utility_service"> https://app.mrupee.in:8443/mRupeeServiceNew/getUtilityServiceProvider</string>
+    <string name="loadWalletConfirm"> https://app.mrupee.in:8443/mRupeeServiceNew/loadWalletConfirm</string>
+    <string name="browseplan"> https://app.mrupee.in:8443/mRupeeServiceNew/getDataCardPlan</string>
+    <string name="detailStatement"> https://app.mrupee.in:8443/mRupeeServiceNew/getDetailStatement</string>
+    <string name="generateOTP"> https://app.mrupee.in:8443/mRupeeServiceNew/sendStoSOtp</string>
+    <string name="states"> https://app.mrupee.in:8443/mRupeeServiceNew/getAllState</string>
+    <string name="allMerchant"> https://app.mrupee.in:8443/mRupeeServiceNew/getAllMerchant</string>
+    <string name="outstandingamount"> https://app.mrupee.in:8443/mRupeeServiceNew/outstandingAmount</string>
+    <string name="sendOTP"> https://app.mrupee.in:8443/mRupeeServiceNew/sendOTP</string>
+    <string name="feedback"> https://app.mrupee.in:8443/mRupeeServiceNew/writeFeedback</string>
+    <string name="category"> https://app.mrupee.in:8443/mRupeeServiceNew/getOnlineCategory</string>
+    <string name="onlinemerchant"> https://app.mrupee.in:8443/mRupeeServiceNew/getAllOnlineMerchant</string>
+    <string name="requestmoneystatement"> https://app.mrupee.in:8443/mRupeeServiceNew/requestMoneyStatement</string>
+    <string name="htmlPage"> https://app.mrupee.in:8443/mRupeeServiceNew/getHtmlPage</string>
+    <string name="rateus"> https://app.mrupee.in:8443/mRupeeServiceNew/rateUs</string>
+    <string name="bannerlink"> https://app.mrupee.in:8443/mRupeeServiceNew/getBannerLink</string>
+    <string name="bannerlinknew"> https://app.mrupee.in:8443/mRupeeServiceNew/getBannerLinkNew</string>
+    <string name="deals">http://deals.mrupee.in/</string>
+    <string name="CarouselBannerDetail"> https://app.mrupee.in:8443/mRupeeServiceNew/getCarouselBannerDetail</string>
+    <string name="Carousel_banner"> https://app.mrupee.in:8443/mRupeeServiceNew/insertCarouselBannerDetail</string>
+    <string name="ForGot_MPIN"> https://app.mrupee.in:8443/mRupeeServiceNew/forgotMPIN</string>
+    <string name="unlock_account_url"> https://app.mrupee.in:8443/mRupeeServiceNew/unlockAccount</string>
+    <string name="offers"> https://app.mrupee.in:8443/mRupeeServiceNew/getOffers</string>
+    <string name="shopclueoffers"> https://app.mrupee.in:8443/mRupeeServiceNew/getShopclueOffers</string>
+    <string name="getpurse"> https://app.mrupee.in:8443/mRupeeServiceNew/getPurseBalance</string>
+    <string name="gift_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getGiftUrl</string>
+    <string name="purse_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getPurseBalanceNew</string>
+    <string name="saveNotification"> https://app.mrupee.in:8443/mRupeeServiceNew/saveNotification</string>
+    <string name="discovery_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getDiscovery</string>
+    <string name="save_token"> https://app.mrupee.in:8443/mRupeeServiceNew/saveToken</string>
+    <string name="kycDocument"> https://app.mrupee.in:8443/mRupeeServiceNew/getKycDoc</string>
+    <string name="saveKycDetail"> https://app.mrupee.in:8443/mRupeeServiceNew/saveKycDeatilTest</string>
+    <string name="updateKycDeatil"> https://app.mrupee.in:8443/mRupeeServiceNew/updateKycDeatil</string>
+    <string name="updateSHMBNew"> https://app.mrupee.in:8443/mRupeeServiceNew/updateSHMBNew</string>
+    <string name="ressyPayment_url"> https://app.mrupee.in:8443/mRupeeServiceNew/ressyPayment</string>
+    <string name="getmycoupon_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getMyCoupon</string>
+    <string name="cancel_coupon_url"> https://app.mrupee.in:8443/mRupeeServiceNew/cancelCoupon</string>
+    <!--<string name="sendOTPNew"> https://app.mrupee.in:8443/mRupeeServiceNew/sendOTPNew</string>-->
+    <!--<string name="verifyOTP"> https://app.mrupee.in:8443/mRupeeServiceNew/verifyOTP</string>-->
+    <string name="sendOTPNew"> https://app.mrupee.in:8443/mRupeeServiceNew/sendOTPNew</string>
+    <string name="verifyOTP"> https://app.mrupee.in:8443/mRupeeServiceNew/verifyOTP</string>
+    <string name="updateDeviceStatus"> https://app.mrupee.in:8443/mRupeeServiceNew/updateDeviceStatus</string>
+    <string name="getMMID"> https://app.mrupee.in:8443/mRupeeServiceNew/getMMID</string>
+    <string name="bank_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getAllBAnk</string>
+    <string name="popular_brand_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getPopularBrand</string>
+    <string name="all_brand_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getBrand</string>
+    <string name="brand_denomination_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getBrandDenomination</string>
+    <string name="add_order_url"> https://app.mrupee.in:8443/mRupeeServiceNew/gciAddOrder</string>
+    <string name="brand_store_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getBrandStore</string>
+    <string name="mobile_connect_terms">https://app.mrupee.in:8443/mRUPEE_HTML/MC.html</string>
+    <!--<string name="profile_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getProfileDetail</string>-->
+    <string name="profile_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getProfileDetailNew</string>
+    <string name="merchantProfile"> https://app.mrupee.in:8443/mRupeeServiceNew/merchantProfile</string>
+
+    <string name="profileupdate_url"> https://app.mrupee.in:8443/mRupeeServiceNew/updateProfile</string>
+    <string name="pullmoney_otp_url"> https://app.mrupee.in:8443/mRupeeServiceNew/pullMoneyOTP</string>
+    <string name="pullmoney_url"> https://app.mrupee.in:8443/mRupeeServiceNew/pullMoney </string>
+
+    <string name="hotels_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getAllShop</string>
+    <string name="hotels_merchant_payment_url"> https://app.mrupee.in:8443/mRupeeServiceNew/adyarPaymentNew</string>
+    <string name="saveSHM_url"> https://app.mrupee.in:8443/mRupeeServiceNew/saveSHM</string>
+    <string name="getSHMbyMDN_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getSHMbyMDN</string>
+    <string name="getSHMbyToken_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getSHMbyToken</string>
+    <string name="updateSHM_url"> https://app.mrupee.in:8443/mRupeeServiceNew/updateSHM</string>
+    <string name="getAdyarCity_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getAdyarCity</string>
+    <string name="getSHMCategory_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getSHMCategory</string>
+    <string name="getSHMTranscation_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getSHMTranscation</string>
+    <string name="getHPCLCity_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getHPCLCity</string>
+    <string name="getHCPLShop_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getHCPLShop</string>
+    <string name="getRestaurantList_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getRestaurantList</string>
+    <string name="getCouponDetail_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getCouponDetail</string>
+    <string name="getOfflineCouponDetail_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getOfflineCouponDetail</string>
+    <string name="recharge_html_url">https://app.mrupee.in:8443/SHM_FAQ/Recharge.html</string>
+    <string name="mpin_html_url">https://app.mrupee.in:8443/SHM_FAQ/mPIN.html</string>
+    <string name="account_html_url">https://app.mrupee.in:8443/SHM_FAQ/account.html</string>
+    <string name="addmoney_html_url">https://app.mrupee.in:8443/SHM_FAQ/add_money.html</string>
+    <string name="moneytransfer_html_url">https://app.mrupee.in:8443/SHM_FAQ/money_transfer.html</string>
+    <string name="kyc_html_url">https://app.mrupee.in:8443/mRUPEE_HTML/KYC.html</string>
+    <string name="shm_down_url"> https://app.mrupee.in:8443/mRupeeServiceNew/shmDown</string>
+    <string name="getNetBank">https://app.mrupee.in:8443/mRupeeServiceNew/getNetBank</string>
+    <string name="getDebitBank">https://app.mrupee.in:8443/mRupeeServiceNew/getDebitBank</string>
+    <string name="getTxnHistoryMerchant">https://app.mrupee.in:8443/mRupeeServiceNew/getTxnHistoryMerchant</string>
+    <string name="getMMIDbBank">https://app.mrupee.in:8443/mRupeeServiceNew/getMMIDBank</string>
+    <string name="forgotMpinOtp">https://app.mrupee.in:8443/mRupeeServiceNew/forgotMpinOtp</string>
+    <string name="forgotMPINNew">https://app.mrupee.in:8443/mRupeeServiceNew/forgotMPINNew</string>
+
+    <!-- Goibibo URL Starts-->
+    <string name="booking_detail_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getbookdetail</string>
+    <string name="purchaseOTP_url"> https://app.mrupee.in:8443/mRupeeServiceNew/purchaseOTP</string>
+
+    <!--Bus Starts -->
+    <string name="bus_search_url"> https://app.mrupee.in:8443/mRupeeServiceNew</string>
+    <string name="bus_seat_map_url"> https://app.mrupee.in:8443/mRupeeServiceNew/seatmap</string>
+    <string name="bus_hold_url"> https://app.mrupee.in:8443/mRupeeServiceNew/holdseat</string>
+    <string name="bus_city_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getAllCity</string>
+    <string name="bus_status_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getStatusBusTicket</string>
+    <string name="cancelbusticket_url"> https://app.mrupee.in:8443/mRupeeServiceNew/cancelbusticket</string>
+    <string name="bus_cancel_policy_url"> https://app.mrupee.in:8443/mRupeeServiceNew/busCancelPolicy</string>
+    <!-- Bus Ends-->
+
+    <!--Flight Starts -->
+    <string name="flight_search_url"> https://app.mrupee.in:8443/mRupeeServiceNew/flightsearch</string>
+    <string name="flight_book_url"> https://app.mrupee.in:8443/mRupeeServiceNew/bookflight</string>
+    <string name="flight_airport_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getAllAirport</string>
+    <!-- Flight Ends-->
+
+    <!-- Hotel Starts-->
+    <string name="hotel_city_list_url"> https://app.mrupee.in:8443/mRupeeServiceNew/getAllHotelCity</string>
+    <string name="hotel_city_hotels_url"> https://app.mrupee.in:8443/mRupeeServiceNew/hotelSearch</string>
+    <string name="hotel_city_hotel_details_url"> https://app.mrupee.in:8443/mRupeeServiceNew/hotelDetail</string>
+    <string name="hotel_book_url"> https://app.mrupee.in:8443/mRupeeServiceNew/hotelBook</string>
+    <string name="terms">T&amp;C</string>
+    <!-- Hotel Ends-->
+
+    <!-- Goibibo URL Ends-->
+    <string name="added"> https://app.mrupee.in:8443/mRupeeServiceNew/loadwalletStatementNEW</string>
+
+    <!-- Goibibo Messages Starts-->
+    <string name="bus_not_found">No buses found</string>
+    <string name="total_price">Total Price</string>
+    <string name="book_now">Book Now</string>
+    <string name="max_six_seats">Maximum 6 seats allowed</string>
+    <string name="select_onward">Please select onward seats</string>
+    <string name="select_max1">You can select max </string>
+    <string name="seat_not_selected">Please select the seat</string>
+    <string name="up">up</string>
+    <string name="up_down">up_down</string>
+    <string name="onw">onw</string>
+    <string name="ret">ret</string>
+
+    <string name="way">way</string>
+    <string name="bus_travel">bus_travel</string>
+    <string name="flight_travel">flight_travel</string>
+    <string name="flight_onward">Please select onward flight.</string>
+    <string name="flight_return">Please select return flight.</string>
+    <string name="invalid_flight_pass_count">Maximum 9 travellers allowed</string>
+    <!-- Goibibo Messages Ends-->
+
+    <string name="title_activity_web">WebActivity</string>
+    <string name="title_activity_load_success">LoadSuccessActivity</string>
+    <string name="title_activity_view_transaction">ViewTransactionActivity</string>
+    <string name="button_proceed">Proceed</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_coupons">Purchase History</string>
+    <string name="button_write_to_us">Write To Us</string>
+    <string name="button_transfer">Transfer</string>
+    <string name="button_request_money">Request Money</string>
+    <string name="button_request_money_statement">Transaction History</string>
+    <string name="button_next">Next</string>
+    <string name="button_back">Back</string>
+    <string name="button_done">Done</string>
+    <string name="button_home">Home</string>
+    <string name="button_add">Add</string>
+    <string name="button_another_transaction">Another Transaction</string>
+    <string name="button_add_beneficiary">Add Beneficiary</string>
+    <string name="button_delete_beneficiary">Delete Beneficiary</string>
+    <string name="button_add_another_beneficiary">Add Another Beneficiary</string>
+    <string name="button_delete_another_beneficiary">Delete Another Beneficiary</string>
+    <string name="button_continue">Continue</string>
+    <string name="button_update">Update</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_raise">Feedback</string>
+    <string name="mobile_connect_login">Mobile Connect Log-in</string>
+    <string name="login_with_otp">Login With OTP</string>
+    <string name="button_load_money">Load Money</string>
+    <string name="checkbox_favourite">Save As Favourite</string>
+    <string name="loading">Please wait...</string>
+    <string name="favorite">Save As Favourite</string>
+    <string name="landline">Postpay walky number with STD code</string>
+    <string name="title_activity_money_transfer">MoneyTransferActivity</string>
+    <string name="title_activity_check_balance">CheckBalanceActivity</string>
+    <string name="title_activity_dthlist">OperatorListActivity</string>
+    <string name="title_activity_check_transactions">CheckTransactionsActivity</string>
+    <string name="title_activity_favorite">FavoriteActivity</string>
+    <string name="title_activity_view_favorite">ViewFavoriteActivity</string>
+    <string name="title_activity_plan_list">PlanListActivity</string>
+    <string name="title_activity_offers">OffersActivity</string>
+    <string name="title_activity_send_money">SendMoneyActivity</string>
+    <string name="title_activity_alert">AlertActivity</string>
+
+    <string name="home">Home</string>
+    <string name="load_money">Load Money</string>
+    <string name="recharge">Recharge/Bill Pay</string>
+    <string name="shopping">Shopping</string>
+    <string name="check_transaction">Transaction History</string>
+    <string name="money_transfer">Money Transfer</string>
+    <string name="quick_transfer">Quick Transfer</string>
+    <string name="quick_pay">Quick Pay</string>
+    <string name="coupons">Coupons/Gift Vouchers</string>
+    <string name="steal">Steal a Deal</string>
+    <string name="inbox">Inbox</string>
+    <string name="travel">Travel</string>
+    <string name="help">Help</string>
+
+    <string name="myaccount">My Wallet</string>
+    <string name="requestmoney">Request Money</string>
+    <string name="coupons1">Coupons</string>
+    <string name="restaurant">Restaurants</string>
+    <string name="FAQs">FAQs</string>
+    <string name="rateus1">Rate Us</string>
+    <string name="feedback1">Feedback</string>
+    <string name="unlock">Unlock Account</string>
+    <string name="termsconditions">  <![CDATA[Terms & Conditions]]></string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="aboutus">About Us</string>
+    <string name="contactus">Contact Us</string>
+    <string name="plz">* File format(.png / .jpeg)</string>
+
+
+    <string name="title_activity_shopping">Shopping</string>
+    <string name="not_detected">Application could not detect\nthe mobile number\nPlease enter mobile number</string>
+    <string name="title_activity_browsw_plan_list">BrowswPlanListActivity</string>
+    <string name="title_activity_choose_operator_mobile">ChooseOperatorMobile</string>
+    <string name="title_activity_merchant_payment">MerchantPayment</string>
+    <string name="title_activity_request_money">RequestMoneyActivity</string>
+    <string name="title_activity_load_money_web">LoadMoneyWebActivity</string>
+    <string name="title_activity_wallet_statement">WalletStatement</string>
+    <string name="title_activity_browse_plan_tab">BrowsePlanTabActivity</string>
+    <string name="title_activity_browse_plan_tab_list">BrowsePlanTabListActivity</string>
+    <string name="title_activity_service_provider_list">ServiceProviderListActivity</string>
+    <string name="title_activity_state_list">StateListActivity</string>
+    <string name="title_activity_account_type">AccountTypeActivity</string>
+    <string name="title_activity_coupon">CouponActivity</string>
+
+
+    <string name="title_activity_plan_type_list">PlanTypeList</string>
+    <string name="title_activity_merchant_payment_new">MerchantPaymentNew</string>
+    <string name="title_activity_skill_angels">SkillAngels</string>
+    <string name="title_activity_sbcterms">SBCTerms</string>
+    <string name="title_activity_redeem">Redeem</string>
+    <string name="title_activity_merchant_list">MerchantList</string>
+    <string name="title_activity_skill_angels_payment">SkillAngelsPayment</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_update__app__activty">Update_App_Activty</string>
+    <string name="title_activity_otp">OTPActivity</string>
+    <string name="title_activity_merchant_transfer_new">MerchantTransferNew</string>
+    <string name="title_activity_online_tranfer">OnlineTranfer</string>
+    <string name="title_activity_merchant_category_list">MerchantCategoryList</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_request_money_statement">RequestMoneyStatementActivity</string>
+    <string name="title_activity_carousel_banner">CarouselBanner</string>
+    <string name="title_activity_forgot_mpin">ForgotMPINActivity</string>
+    <string name="title_activity_loadwallet_low_balance">LoadwalletLowBalance</string>
+    <string name="title_activity_load_success_for_low_balance">LoadSuccessForLowBalanceActivity
+    </string>
+    <string name="forgot_mPIN"><u>Forgot mPIN ?</u></string>
+    <string name="for_moreinfo"><u>Read more</u></string>
+    <string name="title_activity_goibibo">GoibiboActivity</string>
+    <string name="title_activity_goibibo_web">GoibiboWebActivity</string>
+    <string name="title_activity_purse_main_balance">PurseMainBalanceActivity</string>
+    <string name="title_activity_purse_sub_balance">PurseSubBalanceActivity</string>
+    <string name="title_activity_mobile_connect">MobileConnectActivity</string>
+    <string name="title_activity_goibibo_bus">GoibiboBusActivity</string>
+    <string name="title_activity_calendar_view">CalendarViewActivity</string>
+    <string name="title_activity_goibibo_flight">GoibiboFlightActivity</string>
+    <string name="title_activity_kyc">KYCActivity</string>
+    <string name="title_activity_kyc_document_list">KycDocumentList</string>
+    <string name="rupee_symbol">\u20B9</string>
+    <string name="right_arrow_symbol">\u2192</string>
+    <string name="title_activity_goibibo_bus_search">GoibiboBusSearchActivity</string>
+    <string name="title_activity_detailed_statement">DetailedStatementActivity</string>
+
+    <string name="pref_goibibo">goibibo</string>
+    <string name="title_activity_goibibo_bus_search_round_trip">GoibiboBusSearchRoundTripActivity
+    </string>
+    <string name="title_activity_goibibo_bus_seat_map">GoibiboBusSeatMapActivity</string>
+    <string name="title_activity_goibibo_hotel">GoibiboHotelActivity</string>
+    <string name="title_activity_goibibo_bus_lower_upper_seat_map">
+        GoibiboBusLowerUpperSeatMapActivity
+    </string>
+    <string name="title_activity_goibibo_bus_booking_review">GoibiboBusBookingReview</string>
+    <string name="title_activity_goibibo_bus_boarding_point">GoibiboBusBoardingPoint</string>
+    <string name="title_activity_goibibo_bus_traveller">GoibiboBusTravellerActivity</string>
+    <string name="title_activity_goibibo_flight_search_one_way">GoibiboFlightSearchOneWayActivity
+    </string>
+    <string name="title_activity_goibibo_flight_search_round_trip">
+        GoibiboFlightSearchRoundTripActivity
+    </string>
+    <string name="title_activity_bus_city_list">BusCityListActivity</string>
+    <string name="title_activity_goibibo_my_bookings">GoibiboMyBookings</string>
+    <string name="title_activity_goibibo_flight_book_review">GoibiboFlightBookReviewActivity
+    </string>
+    <string name="title_activity_view_beneficiary">ViewBeneficiaryActivity</string>
+
+    <string name="title_activity_goibibo_flight_city_list">GoibiboFlightCityListActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_goibibo_flight_adult_traveller">
+        GoibiboFlightAdultTravellerActivity
+    </string>
+    <string name="title_activity_goibibo_flight_child_infant_traveller">
+        GoibiboFlightChildInfantTravellerActivity
+    </string>
+    <string name="title_activity_select_ifsccode">SelectIFSCCodeActivity</string>
+
+
+    <!-- Billdesk Browser key-->
+    <string name="bd_browser_key">6c20546b-0642-430a-9fb8-f5f3ac123e25</string>
+
+
+    <string name="mybalance"><u>My Balance</u></string>
+    <string name="addmoney"><u>Add Money</u></string>
+    <string name="title_activity_goibibo_hotel_city_list">GoibiboHotelCityListActivity</string>
+    <string name="title_activity_gci">GCIActivity</string>
+    <string name="title_activity_brand_denomination">BrandDenominationActivity</string>
+    <string name="title_activity_denomination">DenominationActivity</string>
+    <string name="title_activity_store">StoreActivity</string>
+    <string name="title_activity_terms">TermsActivity</string>
+    <string name="title_activity_denomination_transaction">DenominationTransactionActivity</string>
+    <string name="title_activity_pay_now_beneficiary">PayNowBeneficiaryActivity</string>
+    <string name="title_activity_goibibootel_search">GoibibootelSearchActivity</string>
+    <string name="title_activity_goibibo_hotel_view">GoibiboHotelViewActivity</string>
+    <string name="title_activity_goibibo_hotel_select_room">GoibiboHotelSelectRoom</string>
+    <string name="title_activity_goibibo_hotel_book_review">GoibiboHotelBookReviewActivity</string>
+    <string name="title_activity_hotel_cancel_policy">HotelCancelPolicy</string>
+    <string name="title_activity_goibibo_bus_cancel_policy">GoibiboBusCancelPolicyActivity</string>
+    <string name="title_activity_store_map">StoreMapActivity</string>
+    <string name="title_activity_self_help">SelfHelpActivity</string>
+    <string name="title_activity_self_help_faq">SelfHelpFAQActivity</string>
+    <string name="title_activity_self_help_feedback">SelfHelpFeedbackActivity</string>
+
+
+    <string name="recharge_bill_payment_help">Recharge/Bill Pay</string>
+    <string name="add_money_help">Add Money</string>
+    <string name="mpin_otp_help">mPIN &amp; OTP</string>
+    <string name="money_transfer_help">Money Transfer</string>
+    <string name="account_help">Account</string>
+    <string name="others_help">Others</string>
+
+
+    <string name="recharge_bill_payment_help_note">report issues for recharge and bill payment.</string>
+    <string name="money_transfer_help_note">report issue for money transfer.</string>
+    <string name="mpin_otp_help_note">report issue for mPIN &amp; OTP.</string>
+    <string name="add_money_help_note">report issue for add money.</string>
+    <string name="account_help_note">report issue for account issue.</string>
+    <string name="others_help_note">speak about other issue.</string>
+
+
+    <string name="title_activity_self_help_feedback_merchant">SelfHelpFeedbackMerchantActivity
+    </string>
+    <string name="title_activity_self_help_app_issue">SelfHelpAppIssueActivity</string>
+    <string name="title_activity_self_help_feedback_bank">SelfHelpFeedbackBankActivity</string>
+    <string name="title_activity_my_issues">MyIssuesActivity</string>
+    <string name="title_activity_past_issues">PastIssuesActivity</string>
+    <string name="title_activity_hotel_location">HotelLocationActivity</string>
+    <string name="title_activity_hotel_merchant">HotelMerchantActivity</string>
+    <string name="title_activity_hotel_merchant_city">HotelMerchantCityActivity</string>
+    <string name="title_activity_self_help_faqfragment">SelfHelpFAQFragmentActivity</string>
+    <string name="title_activity_hpcl">HPCLActivity</string>
+    <string name="title_activity_ressy">RessyActivity</string>
+    <string name="title_activity_restaurant_details">RestaurantDetailsActivity</string>
+    <string name="title_activity_restaurant_coupon">RestaurantCouponActivity</string>
+    <string name="title_activity_restaurant_invoice">RestaurantInvoiceActivity</string>
+    <string name="title_activity_unlock_mpin">UnlockMPINActivity</string>
+    <string name="title_activity_my_coupons">MyCouponsActivity</string>
+    <string name="title_activity_merchant_landing">MerchantLandingActivity</string>
+    <string name="button_request_otp"><u> Request OTP </u></string>
+    <string name="request_otp"><u> Generate OTP </u></string>
+    <string name="button_PullMoney">Pull Money</string>
+    <string name="homeservices">Home Services</string>
+    <string name="invalid_FromDate">Please enter valid From Date</string>
+    <string name="invalid_ToDate">Please enter valid To Date</string>
+    <string name="fromdatemorethentodate">Please enter valid From Date which not more than To Date </string>
+    <string name="enterotp">Please Enter OTP</string>
+
+
+</resources>
+
+
+
+

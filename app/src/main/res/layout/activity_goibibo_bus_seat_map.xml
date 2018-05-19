@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/mainlinear"
+    tools:context="com.tcs.mmpl.customer.Goibibo.Bus.GoibiboBusSeatMapActivity">
+
+    <LinearLayout
+        android:id="@+id/linHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/listheader" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/linHeader"
+        android:layout_above="@+id/imgFooter"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/fragment_bus_seat_map"
+            android:name="com.tcs.mmpl.customer.Goibibo.Bus.Fragment.BusSeatMapFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linLowerUpper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_below="@+id/linFragment"
+        android:layout_above="@+id/imgFooter"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <com.tcs.mmpl.customer.utility.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            app.pststxtIndicatorColor="#5E88C8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/padding_bottom_for_tab_strip"
+            android:paddingTop="@dimen/padding_top_for_tab_strip"
+            android:layout_gravity="center"
+            app:pstsDividerColor="@color/white"
+            app:pstsIndicatorColor="@color/blue"
+            app:pstsTabPaddingLeftRight="20dp"
+            app:pstsTextAllCaps="false"
+            app:pstsUnderlineColor="#999999" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabs"
+            tools:context=".GoibiboBusSeatMapActivity" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/footer"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="title_bar">#e0eefa</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="orange">#f0b26f</color>
+    <color name="blue">#1268b3</color>
+    <color name="light_blue">#1268b1</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="ressy_color">#7b6fdd</color>
+
+    <color name="gray_bag">#e7e3e1</color>
+    <color name="gray_tab">#A8A8A8</color>
+    <color name="textViewColor_Dashboard">#6f757a</color>
+
+    <color name="header_bg">#e7e3e1</color>
+    <color name="body_bg">#AAededed</color>
+    <!--<color name="label_bg">#1268b3</color>-->
+    <color name="body_text">#000000</color>
+    <color name="text_color">#1268b3</color>
+
+    <color name="PrimaryColor">#2196F3</color>
+    <color name="PrimaryDarkColor">#1976D2</color>
+    <color name="circular_progress_default_progress">#1268b3</color>
+    <color name="circular_progress_default_background">#FFFFFF</color>
+    <color name="circular_progress_default_title">#000000</color>
+    <color name="circular_progress_default_subtitle">#D1D1D1</color>
+
+    <color name="today">#4b82ff</color>
+    <color name="greyed_out">#c7c7c7</color>
+
+    <color name="summer">#44eebd82</color>
+    <color name="fall">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+
+    <color name="list_background_color">#eeeeee</color>
+
+</resources>
+
+
+

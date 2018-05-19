@@ -1,0 +1,88 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="normal_text_size_for_offer">22sp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="normal_text_size">22sp</dimen>
+    <dimen name="small_text_size">15sp</dimen>
+    <dimen name="star_txt">15sp</dimen>
+    <dimen name="big_text_size">26sp</dimen>
+    <dimen name="text_btn_size">24sp</dimen>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="text_rupee_size">27sp</dimen>
+    <dimen name="btn_padding_size">15dp</dimen>
+    <dimen name="btn_margin_top">20dp</dimen>
+    <dimen name="radio_btn_size">18sp</dimen>
+    <dimen name="checkbox_size">24sp</dimen>
+    <dimen name="margin_top_for_browes_plans">15dp</dimen>
+    <dimen name="textviewbox_size">24sp</dimen>
+    <dimen name="edittext_size">24sp</dimen>
+    <dimen name="text_size_for_trasfertobank">18sp</dimen>
+    <dimen name="spinner_size">24sp</dimen>
+    <dimen name="text_size_for_title">30sp</dimen>
+    <dimen name="margin_top_size">45dp</dimen>
+    <dimen name="margin_top_for_spinner2">10dp</dimen>
+    <dimen name="margin">15dp</dimen>
+    <dimen name="landscreen_padding_size">15dp</dimen>
+    <dimen name="headding_text_size">30dp</dimen>
+    <dimen name="headding_text_size_forelect">30dp</dimen>
+    <dimen name="margin_left_button_size">17dp</dimen>
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="margin_oftwo_edittext_size">15dp</dimen>
+    <dimen name="spinner_top_margin_size">125dp</dimen>
+    <dimen name="ministatement">25sp</dimen>
+    <dimen name="ministatement_text_date">17sp</dimen>
+    <dimen name="ministatement_text_date_edittext">10sp</dimen>
+    <dimen name="margin_oftwo_edittext_in_ministatement_size">0dp</dimen>
+    <dimen name="my_account">24sp</dimen>
+    <dimen name="my_account_margin">20dp</dimen>
+    <dimen name="btn_padding">24dp</dimen>
+    <dimen name="margin_top_size_tab">30sp</dimen>
+    <dimen name="tabsize">40dp</dimen>
+
+    <dimen name="padding_top_for_tab_strip">15dp</dimen>
+    <dimen name="padding_bottom_for_tab_strip">20dp</dimen>
+    <dimen name="text_size_tab">18sp</dimen>
+
+    <!--Bill Desk sdk modification-->
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="button_font_size">14sp</dimen>
+    <dimen name="body_font_size">10sp</dimen>
+
+    <dimen name="logo_width">125dp</dimen>
+    <dimen name="logo_height">30dp</dimen>
+    <dimen name="banner_height">85dp</dimen>
+    <dimen name="profile_width">60dp</dimen>
+    <dimen name="profile_height">60dp</dimen>
+
+    <dimen name="profile_img_width">60dp</dimen>
+    <dimen name="profile_img_height">60dp</dimen>
+
+
+
+    <dimen name="offers_image_width">100dp</dimen>
+    <dimen name="offers_image_height">100dp</dimen>
+
+    <dimen name = "tableft">25dp</dimen>
+    <dimen name = "tabright">25dp</dimen>
+
+    <dimen name="banner_height_top">175dp</dimen>
+
+    <dimen name="myacc_img_with">70dp</dimen>
+    <dimen name="myacc_img_height">70dp</dimen>
+
+
+    <!-- Goibibo Dimens Starts-->
+    <dimen name="goi_padding">5dp</dimen>
+    <dimen name="goi_padding_top">10dp</dimen>
+    <dimen name="goi_padding_bottom">10dp</dimen>
+    <dimen name="goi_padding_left">10dp</dimen>
+    <dimen name="goi_padding_right">10dp</dimen>
+    <dimen name="goi_margin">5dp</dimen>
+    <dimen name="goi_margin_top">10dp</dimen>
+    <dimen name="goi_margin_bottom">10dp</dimen>
+    <dimen name="goi_margin_left">10dp</dimen>
+    <dimen name="goi_margin_right">10dp</dimen>
+    <dimen name="goi_city_textsize">32sp</dimen>
+    <!-- Goibibo Dimens Ends-->
+</resources>

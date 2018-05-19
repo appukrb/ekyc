@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="operationTypeList">
+        <item>Mobile</item>
+        <item>DTH</item>
+        <item>Landline</item>
+        <item>Data Card</item>
+        <item>Electricity</item>
+        <item>Gas</item>
+        <!--<item>Money Transfer</item>-->
+        <!--<item>Offers</item>-->
+        <!--<item>Request Money</item>-->
+
+    </string-array>
+
+    <string-array name="GoibiboList">
+        <item>Onward</item>
+        <item>Return</item>
+    </string-array>
+
+    <string-array name="Decks">
+        <item>Lower</item>
+        <item>Upper</item>
+    </string-array>
+
+    <string-array name="GoibiboCategory">
+        <item>Bus</item>
+        <item>Flight</item>
+        <item>Hotel</item>
+        <item>My Bookings</item>
+    </string-array>
+
+    <string-array name="view_transaction">
+        <item>Added</item>
+        <item>Paid</item>
+        <item>Detailed Statement</item>
+
+    </string-array>
+
+    <string-array name="GCICategory">
+        <item>Popular Brands</item>
+        <item>All Categories</item>
+    </string-array>
+
+    <string-array name="SHCategory">
+        <item>@string/recharge_bill_payment_help</item>
+        <item>@string/add_money_help</item>
+        <item>@string/mpin_otp_help</item>
+        <item>@string/money_transfer_help</item>
+        <item>@string/account_help</item>
+        <!--<item>App Issue</item>-->
+        <!--<item>Others</item>-->
+    </string-array>
+
+
+    <string-array name="helpCategory">
+        <item>New Issue</item>
+        <item>Past Issues</item>
+    </string-array>
+
+
+    <string-array name="operationTypeList1">
+        <item>Recharge &amp; Pay</item>
+        <item>Offers</item>
+        <item>Quick Transfer</item>
+        <item>Check Transactions</item>
+        <item>Manage Beneficiary</item>
+        <item>Transfer to Bank</item>
+        <item>Transfer to Wallet</item>
+
+    </string-array>
+
+
+    <string-array name="moneyTransferList">
+        <item>Transfer to Bank</item>
+        <item>Quick Pay</item>
+        <item>Manage Beneficiary</item>
+
+    </string-array>
+
+    <string-array name="merchantTransferList">
+        <item>Offline Merchant</item>
+        <item>Online Merchant</item>
+
+
+    </string-array>
+
+
+    <string-array name="location">
+        <item>Select Location</item>
+        <item>Ahmedabad</item>
+        <item>Gandhinagar</item>
+        <item>Surat</item>
+        <item>Rajkot</item>
+    </string-array>
+    <string-array name="Account">
+        <item>Saving</item>
+        <item>Current</item>
+        <item>Cash Deposit</item>
+
+    </string-array>
+
+
+    <string-array name="oprator">
+        <item>Select Operator</item>
+        <item>Vodafone</item>
+        <item>Idea</item>
+        <item>BSNL</item>
+        <item>Airtel</item>
+        <item>Uninor</item>
+        <item>Docomo</item>
+    </string-array>
+
+    <string-array name="dth_oprator">
+        <item>Select Operator</item>
+        <item>Videocon</item>
+        <item>Airtel</item>
+        <item>Tata sky</item>
+        <item>Gtpl</item>
+    </string-array>
+
+
+    <string-array name="amount_arrays">
+        <item>Select Amount</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+
+</resources>

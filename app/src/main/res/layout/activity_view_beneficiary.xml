@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcs.mmpl.customer.Activity.ViewBeneficiaryActivity">
+
+    <LinearLayout
+        android:id="@+id/linheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/listheader" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linheader">
+
+        <ListView
+            android:id="@+id/listBeneficiary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:layout_below="@+id/linselect">
+
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

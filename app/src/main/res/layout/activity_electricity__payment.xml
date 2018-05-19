@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/mainlinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutFooter"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/header" />
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.tcs.mmpl.customer.utility.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                app.pststxtIndicatorColor="#5E88C8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/padding_bottom_for_tab_strip"
+                android:paddingTop="@dimen/padding_top_for_tab_strip"
+                app:pstsDividerColor="@color/white"
+                app:pstsIndicatorColor="@color/blue"
+                app:pstsTabPaddingLeftRight="20dp"
+                app:pstsTextAllCaps="false"
+                app:pstsUnderlineColor="#999999" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tabs"
+                tools:context=".Electricity_Payment" />
+
+
+        </RelativeLayout>
+
+          <include layout="@layout/hamburger_layout"/>
+
+        </android.support.v4.widget.DrawerLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+
+        <ImageView
+            android:id="@+id/imgBanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height"
+            android:background="@drawable/addpic3" />
+    </LinearLayout>
+
+</RelativeLayout>
+

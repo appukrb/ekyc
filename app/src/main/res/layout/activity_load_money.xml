@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tcs.mmpl.customer.Activity.LoadMoneyActivity">
+
+    <LinearLayout
+        android:id="@+id/linHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/header" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#e5ecf8"
+                android:orientation="horizontal"
+                android:padding="@dimen/landscreen_padding_size">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/linDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wallet Balance"
+
+
+                                android:textSize="@dimen/normal_text_size" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:scaleType="fitXY"
+                                    android:onClick="openWallet"
+                                    android:src="@drawable/wallet" />
+
+                                <TextView
+                                    android:id="@+id/txtRS"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="2dp"
+                                    android:gravity="center"
+                                    android:text="Rs."
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/normal_text_size"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/txtBalance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="2dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="#1268b1"
+                                    android:textSize="@dimen/normal_text_size"
+
+                                    />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtUpgrade"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|right"
+                                android:clickable="true"
+                                android:onClick="updateWallet"
+                                android:text="@string/upgrade"
+                                android:textColor="#1268b1"
+                                android:textSize="@dimen/normal_text_size" />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#e5ecf8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/btn_invite_friend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/loadmoney4"
+                            android:text="INVITE FRIEND"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linheader"
+                android:orientation="vertical">
+
+                <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@android:id/tabhost"
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout01"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@color/white"></TabWidget>
+
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"></FrameLayout>
+
+                    </LinearLayout>
+
+                </TabHost>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/hamburger_layout"/>
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

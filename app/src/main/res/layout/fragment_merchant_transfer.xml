@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/viewflipper_merchant_transfer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/linParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e7e3e1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/header" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/margin_top_size"
+                android:background="@color/white">
+
+                <ScrollView
+                    android:id="@+id/scrollViewContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/linearLayoutFooter"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="8dp"
+                        android:background="#ffffff"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Merchant Payment"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/headding_text_size" />
+
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_top_size"
+
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioMerchant"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true" />
+
+                                <LinearLayout
+                                    style="?android:attr/spinnerStyle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:background="@drawable/gradient_spinner_new"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:id="@+id/txtMerchantName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:clickable="true"
+                                        android:gravity="left|center"
+                                        android:singleLine="true"
+                                        android:hint="Select Merchant"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/normal_text_size"
+
+                                        />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_top_size"
+
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioMerchantMobile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edittext"
+                                    android:orientation="horizontal">
+
+
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:enabled="false"
+                                        android:paddingBottom="5dp"
+                                        android:paddingLeft="5dp"
+                                        android:text="+91"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/normal_text_size" />
+
+                                    <EditText
+                                        android:id="@+id/edtMerchantMobileNumber"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:drawableRight="@drawable/contact"
+                                        android:enabled="false"
+                                        android:hint="Merchant Mobile Number"
+                                        android:inputType="number"
+                                        android:maxLength="10"
+                                        android:paddingBottom="5dp"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+
+                                        android:textSize="@dimen/normal_text_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linCity"
+                                style="?android:attr/spinnerStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_top_size"
+                                android:background="@drawable/gradient_spinner_new"
+                                android:orientation="horizontal"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:weightSum="2"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/txtSelectCity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:gravity="left|center"
+                                    android:hint="Select City"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/normal_text_size"
+
+                                    />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/button_linear"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_top_size"
+                                android:gravity="center">
+                                >
+
+                                <Button
+                                    android:id="@+id/btnMerchantConfirm"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/rounded_corner"
+                                    android:onClick="merchantPayment"
+                                    android:padding="@dimen/btn_padding_size"
+                                    android:text="@string/button_proceed"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/normal_text_size"
+
+
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutFooter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black" />
+
+
+                    <ImageView
+                        android:id="@+id/imgBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/banner_height" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+
+</LinearLayout>

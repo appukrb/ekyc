@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/linParent"
+    tools:context="com.tcs.mmpl.customer.Activity.PayNowBeneficiaryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/listheader"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin">
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner" />
+
+        <EditText
+        android:id="@+id/edtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/margin_top_size"
+        android:background="@drawable/edittext"
+        android:hint="Amount"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="@dimen/normal_text_size" />
+
+
+    <EditText
+        android:id="@+id/edtMpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/margin_top_size"
+        android:background="@drawable/edittext"
+        android:hint="mPIN"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:textColor="#000000"
+        android:textSize="@dimen/normal_text_size" />
+
+
+        <Button
+            android:id="@+id/btnPayNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_size"
+            android:background="@drawable/rounded_corner"
+            android:padding="@dimen/btn_padding_size"
+            android:text="@string/button_proceed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

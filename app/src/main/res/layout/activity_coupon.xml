@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcs.mmpl.customer.Activity.Coupon">
+
+   <LinearLayout
+    android:id="@+id/linHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/listheader" />
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@+id/linWriteToUs"
+        android:id="@+id/linWebVIew"
+        android:layout_below="@+id/linheader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    </LinearLayout>
+
+</RelativeLayout>

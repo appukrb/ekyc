@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:id="@+id/scrollViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutFooter"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Congratulations!"
+                    android:textColor="#1268b1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/header_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtConfirmDTHDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registered Id Number 9223276183"
+                    android:textColor="@android:color/black" />
+
+
+
+                <Button
+                    android:id="@+id/btnConfirmDTHDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/btn_padding_size"
+                    android:layout_marginTop="@dimen/btn_margin_top"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner"
+                    android:text="@string/button_confirm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_text_size"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--  <LinearLayout
+
+          android:id="@+id/linearLayoutFooter"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="bottom"
+          android:layout_alignParentBottom="true"
+          >
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="3dp"
+              android:background="#f0b26f"
+              />
+
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:layout_marginTop="2dp"
+              android:background="@drawable/addpic3"
+              />
+      </LinearLayout>
+     -->
+</RelativeLayout>

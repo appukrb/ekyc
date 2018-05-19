@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rec_curve"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/idmenuimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/menu1"
+            android:paddingRight="10dp" />
+        <!--android:visibility="gone"-->
+
+        <ImageView
+            android:id="@+id/idmyacountimg"
+            android:layout_width="@dimen/myacc_img_with"
+            android:layout_height="@dimen/myacc_img_height"
+            android:clickable="true"
+            android:onClick="openMyAcount"
+            android:paddingLeft="15dp"
+            android:visibility="gone"
+            android:src="@drawable/my_account_1" />
+
+        <com.tcs.mmpl.customer.utility.CircularImageView
+            android:id="@+id/imgUser"
+            android:layout_width="@dimen/profile_img_width"
+            android:layout_height="@dimen/profile_img_height"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="loadImage"
+            android:src="@drawable/dummy"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/idlogoimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/logo"
+            android:gravity="center_vertical" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgGenerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imgFavorite"
+            android:background="@drawable/otp"
+            android:onClick="generateOTP"
+            android:clickable="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/idalertimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/imgFavorite"
+            android:background="@drawable/otp"
+            android:clickable="true"
+            android:onClick="openAlert"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_toLeftOf="@+id/iddotimg"
+            android:background="@drawable/fav" />
+
+        <ImageView
+            android:id="@+id/iddotimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="5dp"
+            android:background="#e0eefa"
+            android:clickable="true"
+            android:src="@drawable/dot"
+            android:visibility="gone"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/Notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/alertbox"
+                android:layout_marginTop="1dp"
+                android:onClick="openinbox"
+                android:clickable="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/txtNotificationCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/badge_circle"
+                android:text="3"
+                android:textColor="#FFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0b26f">
+
+    </View>
+
+    <LinearLayout
+        android:id="@+id/webview_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:padding="@dimen/landscreen_padding_size">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/linWelcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome"
+                        android:textColor="#6f757a"
+                        android:textSize="@dimen/normal_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/linDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your Wallet Balance"
+                            android:textColor="#6f757a"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/wallet" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="Rs.0.0"
+                            android:textColor="#1268b1"
+                            android:textSize="@dimen/normal_text_size"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center|left"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:clickable="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/load" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btn_load_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#e5ecf8"
+                            android:drawableTop="@drawable/load" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#e5ecf8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btn_invite_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/loadmoney4"
+                        android:text="INVITE FRIEND"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
